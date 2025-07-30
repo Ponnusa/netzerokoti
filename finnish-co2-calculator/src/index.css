@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f8fafc;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+  }
+  
+  .emission-grade-a {
+    @apply bg-green-500 text-white;
+  }
+  
+  .emission-grade-b {
+    @apply bg-green-400 text-white;
+  }
+  
+  .emission-grade-c {
+    @apply bg-orange-400 text-white;
+  }
+  
+  .emission-grade-d {
+    @apply bg-orange-500 text-white;
+  }
+  
+  .emission-grade-e {
+    @apply bg-red-400 text-white;
+  }
+  
+  .emission-grade-f {
+    @apply bg-red-500 text-white;
+  }
+  
+  .emission-grade-g {
+    @apply bg-red-700 text-white;
+  }
+}
