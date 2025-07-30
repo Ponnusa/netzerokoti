@@ -114,6 +114,7 @@ const FinishCO2Calculator = () => {
 
   useEffect(() => {
     calculateEmissions();
+	// eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formData]);
 
   const calculateEmissions = () => {
