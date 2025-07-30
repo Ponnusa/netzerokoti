@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Home, Zap, Droplets, Calculator, Info, Download, BarChart3, Car, Plus, Trash2, ShoppingCart } from 'lucide-react';
+import { Home, Zap, Droplets, Info, Download, BarChart3, Car, Plus, Trash2, ShoppingCart } from 'lucide-react';
 
 const FinishCO2Calculator = () => {
   const [formData, setFormData] = useState({
